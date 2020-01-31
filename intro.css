@@ -1,0 +1,72 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	font-size: 40px;
+}
+
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.content {
+	position: fixed;
+	bottom: 0;
+	background: transparent;
+	color: #f1f1f1;
+	width: 100%;
+	padding: 60px;
+}
+
+#myBtn {
+	width: 200px;
+	font-size: 20px;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	padding: 20px;
+	border-style: solid;
+	border-width: 2px;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;	
+}
+
+#myBtn:hover {
+	background: white;
+	color: black;
+}
+
+.content h1 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .15em solid white; /* The typwriter cursor */
+  	white-space: pre-wrap; /* Keeps the content on a single line */
+ 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  	letter-spacing: .15em; /* Adjust as needed */
+  	animation: 
+    	typing 3.5s steps(30, end),
+    	blink-caret .5s step-end infinite;
+}
+
+p{
+	position: relative;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}

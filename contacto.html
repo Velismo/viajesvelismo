@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Viajes Velismo | Contacto</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<!--el enlace a nuestro archivo css-->
+	<link href="index.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!--El navegador de nuestra página-->
+	<div>
+	    <nav class="top-right open">
+	      <a class="disc l1 text-body" href="contacto.html">
+	        <div>Contacto</div>
+	      </a>
+	      <a class="disc l2 text-body" href="futuro.html">
+	        <div>Futuro</div>
+	      </a>
+	      <a class="disc l3 text-body" href="nosotros.html">
+	        <div>Nosotros</div>
+	      </a>
+	      <a class="disc l4 text-body" href="viajes.html">
+	        <div>Viajes</div>
+	      </a>
+	      <a class="disc l5 toggle">
+	        Menu
+	      </a>
+	    </nav>
+	</div>
+	<!--Fin del navegador-->
+
+<div class="container">
+    <h1 class="mt-4 mb-3">Contacto</h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a class="text-body" href="index.html">Inicio</a>
+      </li>
+      <li class="breadcrumb-item">Contacto</li>
+    </ol>
+
+    <div class="row">
+      <!--Map Column-->
+      <div class="col-lg-8 mb-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.913998231902!2d-82.27478438453582!3d27.190439683008794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c34da5e312b1b1%3A0xbb04cbc4be0eba9!2sMyakka%20City%2C%20Florida%2034251%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1580408239000!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <h3>Detalles de contacto</h3>
+        <br>
+        <p>
+          Myakka City
+          <br>Florida 34251          
+        </p>
+        <br>
+        <p>
+          <abbr title="Phone">P</abbr>: (123) 456-7890
+        </p>
+        <br>
+        <p>
+          <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">viajesvelismo@vv.com</a>
+        </p>
+        <br>
+        <p>
+          <abbr title="Hours">H</abbr>: Lunes - Viernes: 9:00 AM to 5:00 PM
+        </p>
+      </div>
+    </div>
+
+    <!--Start contact form-->
+    <div class="row">
+      <div class="col-lg-8 mb-4">
+        <h2>Envianos tus consultas</h2>
+        <br>
+        <form name="setMessage" id="contactForm" novalidate>
+
+          <div class="control-group from-group">
+            <div class="controls">
+              <label>Nomrbre completo:</label>
+              <input type="text" class="form-control" id="name" required data-validation-required-message="Please Enter your Full Name">
+              <p class="help-block"></p>
+            </div>
+          </div>
+			<br>
+          <div class="control-group from-group">
+            <div class="controls">
+              <label>Teléfono:</label>
+              <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please Enter your Phone Number">
+              <p class="help-block"></p>
+            </div>
+          </div>
+			<br>
+          <div class="control-group from-group">
+            <div class="controls">
+              <label>Email:</label>
+              <input type="email" class="form-control" id="email" required data-validation-required-message="Please Enter your Email Address">
+              <p class="help-block"></p>
+            </div>
+          </div>
+			<br>
+          <div class="control-group from-group">
+            <div class="controls">
+              <label>Mensaje:</label>
+              <textarea id="message" cols="100" rows="10" class="form-control" required data-validation-required-message="Please Enter your Email Address" maxlength="999" style="resize:one"></textarea>
+            </div>
+          </div>
+          <br> 
+          <div id="success"></div>
+          <button type="submite" class="btn bg-danger text-white" id="sendMessageButton">Enviar</button>
+			<br>
+        </form>
+      </div>
+    </div>
+    <!--End contact form-->
+
+</div>
+  <!--End Container-->
+
+
+
+	<!--Pie de página-->
+
+<footer class="py-5 bg-danger">
+  <div class="container">
+    <div class="m-0 text-center text-white">
+    	<p>Copyright &copy; Viajes Velismo 2020 by <a class="text-white" href="https://github.com/Velismo">Bigheaded developers</a></p>
+	</div>
+  </div>
+</footer>
+
+<!--Fin pie de página-->
+
+
+<!-- Y ahora la parte JavaScript de bootstrap --> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+  <!--Y el enlace al archivo JS-->
+
+  <script  src="script.js"></script>
+
+
+	
+</body>
+</html>
